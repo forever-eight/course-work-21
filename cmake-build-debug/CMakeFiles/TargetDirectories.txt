@@ -1,3 +1,3 @@
-/Users/mariatsykina/CLionProjects/kurs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/mariatsykina/CLionProjects/kurs/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mariatsykina/CLionProjects/kurs/cmake-build-debug/CMakeFiles/kurs.dir
+/Users/i.pavlyukov/pj/course-work-21/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/i.pavlyukov/pj/course-work-21/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/i.pavlyukov/pj/course-work-21/cmake-build-debug/CMakeFiles/course-work-21.dir

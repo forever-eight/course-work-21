@@ -1,97 +1,86 @@
-#pragma once
+#ifndef KURS_INTERVIEW_H
+#define KURS_INTERVIEW_H
+
+#endif //KURS_INTERVIEW_H
+
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
-enum educ : int {
-    NoEducation,
-    School,
-    University
-};
-enum gen : int {
+enum ESex : int {
     Men,
-    Women
+    Women,
+    NonBinary
 };
 
-enum bank : int {
+enum EEducation : int {
+    None,
+    School,
+    Graduate
+};
+
+enum EBank : int {
     Open,
-    Sberbank,
-    Tinkoff
-};
-enum product : int {
-    credit,
-    investment
+    Sber,
+    Tinkoff,
+    Alpha
 };
 
-enum opin : int {
-    ok,
-    good,
-    bad
+enum EProduct : int {
+    Credit,
+    Investment
+};
+
+enum EOpinion : int {
+    Excellent,
+    Well,
+    OK,
+    Cringe,
+    VeryBad
 };
 
 class Interview {
 public:
-    int number;
-    gen gender;
-    int age;
-    int salary;
-    int kids;
-    educ education;
-    bank banks;
-    bank known;
-    bank TV;
-    bank internet;
-    product products;
-    int glad;
-    string why;
-    string needed;
-    string time;
-    int interior;
-    int investment;
-    int how_much;
-    opin opinion;
+    int Number;
+    ESex Sex; // +
+    int Age; // +
+    int Salary;
+    int Kids;
+    EEducation Education; // +
+    EBank Main;
+    vector<EBank> KnownBanks; // +
+    EBank BestBank;
+    EBank WorstBank;
+    EProduct Products;
+    int Glad;
+    string Reason;
+    string Needed;
+    string Time;
+    int Interior;
+    int Investment;
+    int HowMuch;
+    EOpinion Opinion;
 
-public:
-    int getnumber() { return number; }
+    string DescribeNumber();
 
-    gen getgender() { return gender; }
+    string DescribeSex();
 
-    int getage() { return age; }
+    string DescribeAge();
 
-    int getsalary() { return salary; }
+    string DescribeEducation();
 
-    int getkids() { return kids; }
+    string DescribeKnownBanks();
 
-    educ geteducation() { return education; }
+    string DescribeReason();
 
-    bank getbanks() { return banks; }
+    void InputSex();
 
-    bank getknown() { return known; }
+    void InputAge();
 
-    bank getTV() { return TV; }
+    void InputEducation();
 
-    bank getinternet() { return internet; }
+    void InputKnownBanks();
 
-    product getproducts() { return products; }
-
-    int getglad() { return glad; }
-
-    string getwhy() { return why; }
-
-    string getneeded() { return needed; }
-
-    string gettime() { return time; }
-
-    int getinterior() { return interior; }
-
-    int getinvestment() { return investment; }
-
-    int gethow_much() { return how_much; }
-
-    opin getopinion() { return opinion; }
+    void InputReason();
 };
-
-
-
-
-
-

@@ -3,4 +3,4 @@ project(kurs)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(kurs main.cpp interview.h AbstractFactory.h out.h Front_list.h decorator.h)
+add_executable(course-work-21 main.cpp menu.h menu.cpp interview.cpp interview.h)
