@@ -1,0 +1,3 @@
+/Users/mariatsykina/CLionProjects/kurs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mariatsykina/CLionProjects/kurs/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mariatsykina/CLionProjects/kurs/cmake-build-debug/CMakeFiles/kurs.dir
