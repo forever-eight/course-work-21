@@ -44,3 +44,7 @@ Interview *VectorInterviewStorage::SearchByOpinion(EOpinion opinion) {
 void VectorInterviewStorage::Stats() {
     cout << "Stats" << endl;
 }
+
+IInterviewStorage::~IInterviewStorage() {
+
+}

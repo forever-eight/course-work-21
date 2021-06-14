@@ -3,6 +3,8 @@
 
 using namespace std;
 
+string NotAvailable = "N/A";
+
 // Преобразует enum в его строковое представление для вывода на экран
 string PrintEEducation(EEducation e) {
     switch (e) {
@@ -82,12 +84,12 @@ string Interview::DescribeAge() {
 };
 
 string Interview::DescribeEducation() {
-    return "Уровень образования (0. Нет, 1. Школа, 2. Шарага)";
+    return "Уровень образования (0. Нет, 1. Школа, 2. Университет)";
 };
 
-string Interview::DescribeKnownBanks() {
+/*string Interview::DescribeKnownBanks() {
     return "Известные Вам банки, через запятую (0. Открытие, 1. Сбер, 2. Тинькофф, 3. Альфа)";
-};
+};*/
 
 string Interview::DescribeReason() {
     return "Причина";

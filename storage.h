@@ -10,7 +10,7 @@
 class IInterviewStorage {
 public:
     // Абстрактный деструктор, нужен для возможности вызова delete на конкретных релазиациях хранилища
-    virtual ~IInterviewStorage() = 0;
+    virtual ~IInterviewStorage();
 
     // Добавляем новый ответ в хранилище
     virtual void Add(Interview *i) = 0;

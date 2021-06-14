@@ -8,8 +8,6 @@
 
 using namespace std;
 
-string NotAvailable = "N/A";
-
 enum ESex : int {
     Male,
     Female,
@@ -72,7 +70,7 @@ public:
 
     string DescribeEducation();
 
-    string DescribeKnownBanks();
+//    string DescribeKnownBanks();
 
     string DescribeReason();
 
