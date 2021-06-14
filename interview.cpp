@@ -71,28 +71,40 @@ string PrintEOpinion(EOpinion o) {
     return NotAvailable;
 }
 
-string Interview::DescribeID() {
+string DescribeID() {
     return "ID";
 };
 
-string Interview::DescribeSex() {
+string DescribeSex() {
     return "Пол (0. Муж, 1. Жен, 2. Атакующий вертолет)";
 };
 
-string Interview::DescribeAge() {
+string DescribeAge() {
     return "Возраст";
 };
 
-string Interview::DescribeEducation() {
+string DescribeEducation() {
     return "Уровень образования (0. Нет, 1. Школа, 2. Университет)";
 };
 
-/*string Interview::DescribeKnownBanks() {
+string DescribeMainBank() {
+    return "Основной банк (0. Открытие, 1. Сбер, 2. Тинькофф, 3. Альфа)";
+};
+
+/*string DescribeKnownBanks() {
     return "Известные Вам банки, через запятую (0. Открытие, 1. Сбер, 2. Тинькофф, 3. Альфа)";
 };*/
 
-string Interview::DescribeReason() {
+string DescribeReason() {
     return "Причина";
+};
+
+string DescribeOpinion() {
+    return "Мнение";
+};
+
+string DescribeDate() {
+    return "Дата";
 };
 
 void Interview::InputSex() {
@@ -137,7 +149,7 @@ Interview *InputInterview() {
     Interview *interview = new Interview;
 
     // Все вручную введенные имеют id >= 300'000, чтобы не перепутать с автогенерированными
-    interview->ID = arc4random() % 100000 + 300000;
+    interview->ID = arc4random() % 100000 + 500000;
 
     cout << endl << "Заполните все поля опроса" << endl;
     // todo: сделать и вызвать для всех полей
@@ -146,6 +158,8 @@ Interview *InputInterview() {
     interview->InputEducation();
 //    interview->InputKnownBanks();
     interview->InputReason();
+
+    cout << "Added, ID " << interview->ID;
 
     return interview;
 }
@@ -158,4 +172,6 @@ void PrintInterview(Interview *i) {
     cout << "\tEducation: " << PrintEEducation(i->Education) << endl;
     cout << "\tMain bank: " << PrintEBank(i->MainBank) << endl;
     cout << "\tReason: " << i->Reason << endl;
+    cout << "\tOpinion: " << PrintEOpinion(i->Opinion) << endl;
+    cout << "\tDate: " << i->Date << endl;
 }

@@ -1,8 +1,9 @@
 #ifndef KURS_STORAGE_H
 #define KURS_STORAGE_H
 
-#include "interview.h"
 #include <vector>
+#include "interview.h"
+#include "single_linked_list.h"
 
 // Общий интерфейс для хранилища ответов
 class IInterviewStorage {
@@ -42,10 +43,32 @@ private:
     vector<Interview *> storage;
 
 public:
-    ~VectorInterviewStorage() {
-        storage.clear();
-        storage.shrink_to_fit();
-    }
+    ~VectorInterviewStorage();
+
+    virtual void Add(Interview *i);
+
+    virtual void Remove(int id);
+
+    virtual Interview *SearchByID(int id);
+
+    virtual Interview *SearchByAge(int id);
+
+    virtual Interview *SearchByMainBank(EBank bank);
+
+    virtual Interview *SearchByDate(string date);
+
+    virtual Interview *SearchByOpinion(EOpinion opinion);
+
+    virtual void Stats();
+};
+
+// Конкретная реализация хранилища ответов на SingleLinkedList
+class ListInterviewStorage : public IInterviewStorage {
+private:
+    SingleLinkedList storage;
+
+public:
+    ~ListInterviewStorage();
 
     virtual void Add(Interview *i);
 

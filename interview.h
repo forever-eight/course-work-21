@@ -39,6 +39,12 @@ enum EOpinion : int {
     VeryBad
 };
 
+string PrintEEducation(EEducation e);
+string PrintESex(ESex s);
+string PrintEBank(EBank b);
+string PrintEProduct(EProduct p);
+string PrintEOpinion(EOpinion o);
+
 class Interview {
 public:
     int ID;
@@ -61,18 +67,6 @@ public:
     EOpinion Opinion;
     string Date;
 
-    string DescribeID();
-
-    string DescribeSex();
-
-    string DescribeAge();
-
-    string DescribeEducation();
-
-//    string DescribeKnownBanks();
-
-    string DescribeReason();
-
     void InputSex();
 
     void InputAge();
@@ -88,6 +82,22 @@ Interview *InputInterview();
 
 void PrintInterview(Interview *i);
 
+string DescribeID();
 
+string DescribeSex();
+
+string DescribeAge();
+
+string DescribeEducation();
+
+string DescribeMainBank();
+
+//    string DescribeKnownBanks();
+
+string DescribeReason();
+
+string DescribeDate();
+
+string DescribeOpinion();
 
 #endif //KURS_INTERVIEW_H

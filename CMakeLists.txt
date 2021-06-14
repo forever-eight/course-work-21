@@ -3,4 +3,4 @@ project(kurs)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(course-work-21 main.cpp menu.h menu.cpp interview.cpp interview.h storage.h storage.cpp factory.cpp factory.h)
+add_executable(course-work-21 main.cpp menu.h menu.cpp interview.cpp interview.h storage.h storage.cpp factory.cpp factory.h single_linked_list.h)

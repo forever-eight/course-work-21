@@ -3,16 +3,19 @@
 #ifndef KURS_FACTORY_H
 #define KURS_FACTORY_H
 
-class IFactory {
-    virtual Interview *CreateInterview() = 0;
+class AbstractFactory {
+public:
+    virtual Interview *CreateInterview(int id) = 0;
 };
 
-class BusinessFactory {
-    virtual Interview *CreateInterview();
+class BusinessmanFactory : public AbstractFactory {
+public:
+    virtual Interview *CreateInterview(int id);
 };
 
-class HousewifeFactory {
-    virtual Interview *CreateInterview();
+class HousewifeFactory : public AbstractFactory {
+public:
+    virtual Interview *CreateInterview(int id);
 };
 
 #endif //KURS_FACTORY_H
