@@ -32,8 +32,7 @@ public:
     // Возвращает первый найденый ответ с таким мнением
     virtual Interview *SearchByOpinion(EOpinion opinion) = 0;
 
-    // Пока просто выводит все ответы
-    // todo: Выводит статистику
+    // Выводит статистику
     virtual void Stats() = 0;
 };
 
