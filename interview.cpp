@@ -128,13 +128,15 @@ void Interview::InputEducation() {
 }*/
 
 void Interview::InputReason() {
-    cout << DescribeReason() << ":" << endl;
-    cin >> Reason;
+    cout << DescribeReason() << ": " << endl;
+    cin.ignore();
+    getline(cin, Reason);
 };
 
 Interview *InputInterview() {
     Interview *interview = new Interview;
 
+    cout << endl << "Заполните все поля опроса" << endl;
     // todo: сделать и вызвать для всех полей
     interview->InputSex();
     interview->InputAge();
@@ -147,7 +149,7 @@ Interview *InputInterview() {
 
 void PrintInterview(Interview *i) {
     // todo: сделать вывод для всех полей
-    cout << "ID" << i->ID << endl;
+    cout << "ID " << i->ID << endl;
     cout << "\tSex: " << i->Sex << endl;
     cout << "\tAge: " << i->Age << endl;
     cout << "\tEducation: " << PrintEEducation(i->Education) << endl;

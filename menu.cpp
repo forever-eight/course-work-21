@@ -27,40 +27,41 @@ void selectEngine() {
     }
 }
 
-void selectMenu() {
-    cout << "Menu" << endl;
-    cout << "\t1. Auto-generate (500'000)" << endl;
-    cout << "\t2. Search" << endl;
-    cout << "\t3. Add" << endl;
-    cout << "\t4. Remove" << endl;
-    cout << "\t5. Statistics" << endl;
-    cout << "\t6. Exit" << endl;
-
+void menu() {
     int m;
     while (true) {
+        cout << endl << endl << "Menu" << endl;
+        cout << "\t1. Auto-generate (500'000)" << endl;
+        cout << "\t2. Search" << endl;
+        cout << "\t3. Add" << endl;
+        cout << "\t4. Remove" << endl;
+        cout << "\t5. Statistics" << endl;
+        cout << "\t6. Exit" << endl;
+
         cin >> m;
         switch (m) {
             case 1:
                 // todo: auto-gen
-                return;
+                break;
             case 2:
                 // todo: search
-                return;
+                break;
             case 3:
                 interviews->Add(InputInterview());
-                return;
+                break;
             case 4:
                 // todo: remove
-                return;
+                break;
             case 5:
-                // todo: stats
-                return;
+                interviews->Stats();
+                break;
             case 6:
                 delete interviews;
                 // todo: exit
                 return;
             default:
                 cout << "Menu item not recognized, try again:" << endl;
+                break;
         }
     }
 }

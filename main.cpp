@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     selectEngine();
-    selectMenu();
+    menu();
 
     return 0;
 }
