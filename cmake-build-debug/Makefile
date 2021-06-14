@@ -223,6 +223,33 @@ menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/course-work-21.dir/build.make CMakeFiles/course-work-21.dir/menu.cpp.s
 .PHONY : menu.cpp.s
 
+storage.o: storage.cpp.o
+
+.PHONY : storage.o
+
+# target to build an object file
+storage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/course-work-21.dir/build.make CMakeFiles/course-work-21.dir/storage.cpp.o
+.PHONY : storage.cpp.o
+
+storage.i: storage.cpp.i
+
+.PHONY : storage.i
+
+# target to preprocess a source file
+storage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/course-work-21.dir/build.make CMakeFiles/course-work-21.dir/storage.cpp.i
+.PHONY : storage.cpp.i
+
+storage.s: storage.cpp.s
+
+.PHONY : storage.s
+
+# target to generate assembly for a file
+storage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/course-work-21.dir/build.make CMakeFiles/course-work-21.dir/storage.cpp.s
+.PHONY : storage.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -241,6 +268,9 @@ help:
 	@echo "... menu.o"
 	@echo "... menu.i"
 	@echo "... menu.s"
+	@echo "... storage.o"
+	@echo "... storage.i"
+	@echo "... storage.s"
 .PHONY : help
 
 

@@ -1,16 +1,18 @@
-#ifndef KURS_INTERVIEW_H
-#define KURS_INTERVIEW_H
+#ifndef KURS_MENU_H
+#define KURS_MENU_H
 
-#endif //KURS_INTERVIEW_H
+#endif //KURS_MENU_H
 
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
+string NotAvailable = "N/A";
+
 enum ESex : int {
-    Men,
-    Women,
+    Male,
+    Female,
     NonBinary
 };
 
@@ -42,27 +44,27 @@ enum EOpinion : int {
 
 class Interview {
 public:
-    int Number;
+    int ID;
     ESex Sex; // +
     int Age; // +
     int Salary;
     int Kids;
     EEducation Education; // +
-    EBank Main;
-    vector<EBank> KnownBanks; // +
+    EBank MainBank;
+//    vector<EBank> KnownBanks; // +
     EBank BestBank;
     EBank WorstBank;
     EProduct Products;
     int Glad;
     string Reason;
     string Needed;
-    string Time;
     int Interior;
     int Investment;
     int HowMuch;
     EOpinion Opinion;
+    string Date;
 
-    string DescribeNumber();
+    string DescribeID();
 
     string DescribeSex();
 
@@ -80,7 +82,12 @@ public:
 
     void InputEducation();
 
-    void InputKnownBanks();
+//    void InputKnownBanks();
 
     void InputReason();
 };
+
+Interview *InputInterview();
+
+void PrintInterview(Interview *i);
+

@@ -95,6 +95,12 @@
 		<Unit filename="/Users/i.pavlyukov/pj/course-work-21/menu.h">
 			<Option target="course-work-21"/>
 		</Unit>
+		<Unit filename="/Users/i.pavlyukov/pj/course-work-21/storage.cpp">
+			<Option target="course-work-21"/>
+		</Unit>
+		<Unit filename="/Users/i.pavlyukov/pj/course-work-21/storage.h">
+			<Option target="course-work-21"/>
+		</Unit>
 		<Unit filename="/Users/i.pavlyukov/pj/course-work-21/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -1,24 +1,10 @@
 #include <iostream>
 #include "menu.h"
-#include "interview.h"
+#include "storage.h"
+
 using namespace std;
 
-vector<Interview*> answers;
-
-Interview* interview;
-
-Interview* AddInterview() {
-    interview = new Interview;
-
-    // todo: сделать и вызвать для всех полей
-    interview->InputSex();
-    interview->InputAge();
-    interview->InputEducation();
-    interview->InputKnownBanks();
-    interview->InputReason();
-
-    return interview;
-}
+IInterviewStorage *interviews;
 
 void selectEngine() {
     cout << "Engine" << endl;
@@ -33,7 +19,7 @@ void selectEngine() {
                 // todo: custom linked list
                 return;
             case 2:
-                // todo: std vector
+                interviews = new VectorInterviewStorage;
                 return;
             default:
                 cout << "Engine not recognized, try again:" << endl;
@@ -61,8 +47,7 @@ void selectMenu() {
                 // todo: search
                 return;
             case 3:
-                // todo: add
-                AddInterview();
+                interviews->Add(InputInterview());
                 return;
             case 4:
                 // todo: remove
@@ -71,6 +56,7 @@ void selectMenu() {
                 // todo: stats
                 return;
             case 6:
+                delete interviews;
                 // todo: exit
                 return;
             default:
