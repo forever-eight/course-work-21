@@ -29,6 +29,7 @@ void selectEngine() {
 
 void menu() {
     int m;
+    int id;
     while (true) {
         cout << endl << endl << "Menu" << endl;
         cout << "\t1. Auto-generate (500'000)" << endl;
@@ -50,7 +51,10 @@ void menu() {
                 interviews->Add(InputInterview());
                 break;
             case 4:
-                // todo: remove
+                cout << "Укажите ID:" << endl;
+
+                cin >> id;
+                interviews->Remove(id);
                 break;
             case 5:
                 interviews->Stats();

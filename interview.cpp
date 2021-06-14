@@ -136,6 +136,9 @@ void Interview::InputReason() {
 Interview *InputInterview() {
     Interview *interview = new Interview;
 
+    // Все вручную введенные имеют id >= 300'000, чтобы не перепутать с автогенерированными
+    interview->ID = arc4random() % 100000 + 300000;
+
     cout << endl << "Заполните все поля опроса" << endl;
     // todo: сделать и вызвать для всех полей
     interview->InputSex();
