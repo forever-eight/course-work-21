@@ -142,6 +142,33 @@ course-work-21/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/course-work-21.dir/build.make CMakeFiles/course-work-21.dir/build
 .PHONY : course-work-21/fast
 
+factory.o: factory.cpp.o
+
+.PHONY : factory.o
+
+# target to build an object file
+factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/course-work-21.dir/build.make CMakeFiles/course-work-21.dir/factory.cpp.o
+.PHONY : factory.cpp.o
+
+factory.i: factory.cpp.i
+
+.PHONY : factory.i
+
+# target to preprocess a source file
+factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/course-work-21.dir/build.make CMakeFiles/course-work-21.dir/factory.cpp.i
+.PHONY : factory.cpp.i
+
+factory.s: factory.cpp.s
+
+.PHONY : factory.s
+
+# target to generate assembly for a file
+factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/course-work-21.dir/build.make CMakeFiles/course-work-21.dir/factory.cpp.s
+.PHONY : factory.cpp.s
+
 interview.o: interview.cpp.o
 
 .PHONY : interview.o
@@ -259,6 +286,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... course-work-21"
+	@echo "... factory.o"
+	@echo "... factory.i"
+	@echo "... factory.s"
 	@echo "... interview.o"
 	@echo "... interview.i"
 	@echo "... interview.s"

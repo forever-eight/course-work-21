@@ -1,6 +1,7 @@
 #include <iostream>
 #include "menu.h"
 #include "storage.h"
+#include "factory.h"
 
 using namespace std;
 
@@ -52,7 +53,6 @@ void menu() {
                 break;
             case 4:
                 cout << "Укажите ID:" << endl;
-
                 cin >> id;
                 interviews->Remove(id);
                 break;

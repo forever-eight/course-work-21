@@ -1,10 +1,9 @@
-#ifndef KURS_MENU_H
-#define KURS_MENU_H
-
-#endif //KURS_MENU_H
+#ifndef KURS_INTERVIEW_H
+#define KURS_INTERVIEW_H
 
 #include <iostream>
 #include <vector>
+
 
 using namespace std;
 
@@ -89,3 +88,6 @@ Interview *InputInterview();
 
 void PrintInterview(Interview *i);
 
+
+
+#endif //KURS_INTERVIEW_H

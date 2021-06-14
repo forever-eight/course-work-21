@@ -1,7 +1,5 @@
-#ifndef KURS_MENU_H
-#define KURS_MENU_H
-
-#endif //KURS_MENU_H
+#ifndef KURS_STORAGE_H
+#define KURS_STORAGE_H
 
 #include "interview.h"
 #include <vector>
@@ -65,3 +63,5 @@ public:
 
     virtual void Stats();
 };
+
+#endif //KURS_STORAGE_H

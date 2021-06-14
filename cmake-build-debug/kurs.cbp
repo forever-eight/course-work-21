@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/i.pavlyukov/pj/course-work-21/factory.cpp">
+			<Option target="course-work-21"/>
+		</Unit>
+		<Unit filename="/Users/i.pavlyukov/pj/course-work-21/factory.h">
+			<Option target="course-work-21"/>
+		</Unit>
 		<Unit filename="/Users/i.pavlyukov/pj/course-work-21/interview.cpp">
 			<Option target="course-work-21"/>
 		</Unit>
