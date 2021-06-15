@@ -40,42 +40,69 @@ enum EOpinion : int {
 };
 
 string PrintEEducation(EEducation e);
+
 string PrintESex(ESex s);
+
 string PrintEBank(EBank b);
+
 string PrintEProduct(EProduct p);
+
 string PrintEOpinion(EOpinion o);
 
 class Interview {
 public:
     int ID;
-    ESex Sex; // +
-    int Age; // +
-    int Salary;
-    int Kids;
+    ESex Sex; // + =
+    int Age; // + =
+    int Salary; // + =
+    int Kids; //+
     EEducation Education; // +
-    EBank MainBank;
-//    vector<EBank> KnownBanks; // +
-    EBank BestBank;
-    EBank WorstBank;
-    EProduct Products;
-    int Glad;
-    string Reason;
-    string Needed;
-    int Interior;
-    int Investment;
-    int HowMuch;
-    EOpinion Opinion;
-    string Date;
+    EBank MainBank; //+
+    EBank BestBank; //+
+    EBank WorstBank; //+
+    EProduct Products; //+
+    int Glad; //+
+    string Reason; //+
+    string Needed; //+
+    int Interior; //+
+    int Investment; //+
+    int HowMuch; //+
+    EOpinion Opinion; //+
+    string Date; //+
 
     void InputSex();
 
     void InputAge();
 
+    void InputSalary();
+
+    void InputKids();
+
     void InputEducation();
 
-//    void InputKnownBanks();
+    void InputMainBank();
+
+    void InputBestBank();
+
+    void InputWorstBank();
+
+    void InputProducts();
+
+    void InputGlad();
 
     void InputReason();
+
+    void InputNeeded();
+
+    void InputInterior();
+
+    void InputInvestment();
+
+    void InputHowMuch();
+
+    void InputOpinion();
+
+    void InputDate();
 };
 
 Interview *InputInterview();
@@ -91,8 +118,6 @@ string DescribeAge();
 string DescribeEducation();
 
 string DescribeMainBank();
-
-//    string DescribeKnownBanks();
 
 string DescribeReason();
 
